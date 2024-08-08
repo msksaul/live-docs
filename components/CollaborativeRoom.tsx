@@ -97,7 +97,7 @@ const CollaborativeRoom = ({ roomId, roomMetadata, users, currentUserType }: Col
             )}
 
             {currentUserType !== 'editor' && !editing && (
-              <p className='vew-only-tag'>View only</p>
+              <p className='view-only-tag'>View only</p>
             )}
 
             {loading && <p className='text-sm text-gray-400'>saving...</p>}
