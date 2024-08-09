@@ -1,6 +1,7 @@
 import AddDocumentBtn from '@/components/AddDocumentBtn'
 import { DeleteModal } from '@/components/DeleteModal'
 import Header from '@/components/Header'
+import Notifications from '@/components/Notifications'
 import { getDocuments } from '@/lib/actions/room.actions'
 import { dateConverter } from '@/lib/utils'
 import { SignedIn, UserButton } from '@clerk/nextjs'
@@ -8,7 +9,6 @@ import { currentUser } from '@clerk/nextjs/server'
 import Image from 'next/image'
 import Link from 'next/link'
 import { redirect } from 'next/navigation'
-
 
 const Home = async () => {
 
@@ -21,7 +21,7 @@ const Home = async () => {
     <main className='home-container'>
       <Header className='sticky left-0 top-0'>
         <div className='flex items-center gap-2 lg:gap-4'>
-          Notification
+          <Notifications />
           <SignedIn>
             <UserButton />
           </SignedIn>

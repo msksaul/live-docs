@@ -1,6 +1,5 @@
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select'
 
-
 const UserTypeSelector = ({ userType, setUserType, onClickHandler }: UserTypeSelectorParams) => {
 
   const accessChangeHandler = (type: UserType) => {

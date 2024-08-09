@@ -19,7 +19,6 @@ const ThreadWrapper = ({ thread }: ThreadWrapperProps) => {
   )
 }
 
-
 const Comments = () => {
 
   const { threads } = useThreads()

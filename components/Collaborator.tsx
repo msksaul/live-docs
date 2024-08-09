@@ -4,7 +4,6 @@ import UserTypeSelector from './UserTypeSelector'
 import { Button } from './ui/button'
 import { removeCollaborator, updateDocumentAccess } from '@/lib/actions/room.actions'
 
-
 const Collaborator = ({ roomId, creatorId, collaborator, email, user }: CollaboratorProps) => {
 
   const [userType, setUserType] = useState(collaborator.userType || 'viewer')
